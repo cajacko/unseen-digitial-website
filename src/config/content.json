@@ -19,19 +19,21 @@
   "people": [
     {
       "key": "charlie",
-      "image": "/assets/charlie.png",
-      "name": "Charlie Jackson",
-      "tagLine": "JavaScript Developer",
-      "actionUrl": "https://www.linkedin.com/in/charliejackson9/",
-      "actionText": "More"
+      "imageUrl": "/assets/charlie.png",
+      "imageAlt": "Charlie Jackson head shot",
+      "title": "Charlie Jackson",
+      "text": "JavaScript Developer",
+      "linkUrl": "https://www.linkedin.com/in/charliejackson9/",
+      "linkText": "More"
     },
     {
       "key": "rob",
-      "image": "/assets/rob.png",
-      "name": "Rob Wollner",
-      "tagLine": "Developer man with a plan",
-      "actionUrl": "https://www.linkedin.com/in/robert-wollner-88878167/",
-      "actionText": "More"
+      "imageUrl": "/assets/rob.png",
+      "imageAlt": "Rob Wollner head shot",
+      "title": "Rob Wollner",
+      "text": "Developer man with a plan",
+      "linkUrl": "https://www.linkedin.com/in/robert-wollner-88878167/",
+      "linkText": "More"
     }
   ],
   "contactTitle": "Contact Us"

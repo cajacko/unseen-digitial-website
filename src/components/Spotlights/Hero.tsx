@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Link from './Link';
-import Text from './Text';
+import Link from '../Link';
+import Text from '../Text';
 
 interface IProps {
   title: string;

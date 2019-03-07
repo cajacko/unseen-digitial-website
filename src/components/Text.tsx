@@ -2,7 +2,7 @@ import * as React from 'react';
 
 interface IProps {
   text: string;
-  type: 'h1' | 'h2' | 'body1' | 'body2';
+  type: 'h1' | 'h2' | 'h3' | 'body1' | 'body2';
 }
 
 /**
