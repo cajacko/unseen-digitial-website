@@ -1,4 +1,5 @@
 import React from 'react';
+import { createGlobalStyle } from 'styled-components';
 import content from '../config/content.json';
 import Columns from './Layout/Columns';
 import Rows from './Layout/Rows';
@@ -9,11 +10,20 @@ import TitleLink from './Spotlights/TitleLink';
 import TitleText from './Spotlights/TitleText';
 import TextSpotlight from './TextSpotlight';
 
+const GlobalStyle = createGlobalStyle`
+  html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+`;
+
 /**
  * Entry point for the page markup
  */
 const App = () => (
   <React.Fragment>
+    <GlobalStyle />
     <Hero
       title={content.title}
       subTitle={content.tagLine}
