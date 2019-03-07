@@ -1,6 +1,7 @@
 {
   "extends": ["airbnb"],
   "rules": {
+    "jsx-a11y/anchor-is-valid": "off",
     "react/default-props-match-prop-types": "off",
     "import/no-unresolved": "off",
     "no-unused-vars": "off",
