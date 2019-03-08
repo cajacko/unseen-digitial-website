@@ -14,7 +14,7 @@ interface IProps {
 const TitleLink = ({ title, linkText, linkUrl }: IProps) => (
   <section>
     <Text text={title} type="h3" />
-    <Link text={linkText} url={linkUrl} />
+    <Link text={linkText} url={linkUrl} theme="primary" />
   </section>
 );
 

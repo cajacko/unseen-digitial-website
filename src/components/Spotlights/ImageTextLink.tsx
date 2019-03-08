@@ -27,7 +27,7 @@ const ImageTextLink = ({ items }: IProps) => (
           <Image src={imageUrl} alt={imageAlt} />
           <Text text={title} type="h3" />
           <Text text={text} type="body1" />
-          <Link text={linkText} url={linkUrl} />
+          <Link text={linkText} url={linkUrl} theme="primary" />
         </div>
       ))}
   </section>
