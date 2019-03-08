@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from '../Link';
-import Text from '../Text';
+import TitleContent from './TitleContent';
 
 interface IProps {
   title: string;
@@ -12,10 +12,9 @@ interface IProps {
  * Render a title and link
  */
 const TitleLink = ({ title, linkText, linkUrl }: IProps) => (
-  <section>
-    <Text text={title} type="h3" />
+  <TitleContent title={title} center>
     <Link text={linkText} url={linkUrl} theme="primary" />
-  </section>
+  </TitleContent>
 );
 
 export default TitleLink;

@@ -9,6 +9,7 @@ interface IDivProps {
   topPadding: boolean;
   bottomPadding: boolean;
   centerHorizontally: boolean;
+  maxWidth?: boolean | number;
 }
 
 type ChildrenFunc = (props: {
@@ -23,11 +24,16 @@ interface IProps extends IDivProps {
 }
 
 export const OVERLAP = 40;
+export const CONTENT_WIDTH = 800;
 
 /**
  * Get the spacing or allowance for overlapping content
  */
-const spacing = ({ verticalOverlap, topPadding, bottomPadding }: IDivProps) => {
+const applySpacing = ({
+  verticalOverlap,
+  topPadding,
+  bottomPadding,
+}: IDivProps) => {
   if (verticalOverlap) {
     return `
       margin-top: -${OVERLAP}px;
@@ -37,24 +43,48 @@ const spacing = ({ verticalOverlap, topPadding, bottomPadding }: IDivProps) => {
 
   let style = '';
 
-  if (topPadding) style = `padding-top: ${OVERLAP}px`;
-  if (bottomPadding) style = `padding-bottom: ${OVERLAP}px`;
+  if (topPadding) style = `padding-top: ${OVERLAP}px;`;
+  if (bottomPadding) style = `${style}padding-bottom: ${OVERLAP}px;`;
 
   return style;
 };
 
-const Container = styled.div<{ backgroundColor: BackgroundColors }>`
+/**
+ * Apply the max width styling
+ */
+const applyMaxWidth = ({ maxWidth }: { maxWidth?: IProps['maxWidth'] }) => {
+  if (!maxWidth) return '';
+
+  if (maxWidth === true) return `max-width: ${CONTENT_WIDTH}px;`;
+
+  return `max-width: ${maxWidth}px;`;
+};
+
+interface IContainerProps {
+  backgroundColor: BackgroundColors;
+  verticalOverlap: boolean;
+}
+
+const Container = styled.div<IContainerProps>`
   display: flex;
   flex-direction: column;
   background-color: ${({ backgroundColor }) => backgroundColor};
+  position: relative;
+  z-index: ${({ verticalOverlap }) => (verticalOverlap ? 2 : 1)};
 `;
 
 const Content = styled.div<IDivProps>`
   display: flex;
   flex-direction: column;
-  ${({ centerHorizontally }) =>
-    (centerHorizontally ? 'align-items: center' : '')}
-  ${spacing}
+  ${({ centerHorizontally, maxWidth }) =>
+    (centerHorizontally || maxWidth ? 'align-items: center' : '')}
+  ${applySpacing}
+`;
+
+const MaxWidth = styled.div<{ maxWidth?: IProps['maxWidth'] }>`
+  display: flex;
+  flex-direction: column;
+  ${applyMaxWidth}
 `;
 
 /**
@@ -67,17 +97,24 @@ const ContentContainer = ({
   bottomPadding,
   backgroundColor,
   centerHorizontally,
+  maxWidth,
 }: IProps) => (
-  <Container backgroundColor={backgroundColor}>
+  <Container
+    backgroundColor={backgroundColor}
+    verticalOverlap={verticalOverlap}
+  >
     <Content
       verticalOverlap={verticalOverlap}
       topPadding={topPadding}
       bottomPadding={bottomPadding}
       centerHorizontally={centerHorizontally}
+      maxWidth={maxWidth}
     >
-      {typeof children === 'function'
-        ? children({ backgroundColor })
-        : children}
+      <MaxWidth maxWidth={maxWidth}>
+        {typeof children === 'function'
+          ? children({ backgroundColor })
+          : children}
+      </MaxWidth>
     </Content>
   </Container>
 );

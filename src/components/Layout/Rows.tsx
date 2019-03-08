@@ -12,6 +12,7 @@ interface IProps {
   children: Children;
   backgroundColor: BackgroundColors;
   centerHorizontally?: boolean;
+  maxWidth?: boolean | number;
 }
 
 const Content = styled.div`
@@ -29,6 +30,7 @@ const Rows = ({
   bottomPadding,
   backgroundColor,
   centerHorizontally,
+  maxWidth,
 }: IProps) => (
   <ContentContainer
     backgroundColor={backgroundColor}
@@ -36,6 +38,7 @@ const Rows = ({
     topPadding={!!topPadding}
     bottomPadding={!!bottomPadding}
     centerHorizontally={!!centerHorizontally}
+    maxWidth={maxWidth}
   >
     {typeof children === 'function' ? (
       props => <Content>{children(props)}</Content>

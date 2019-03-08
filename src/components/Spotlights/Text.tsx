@@ -8,7 +8,6 @@ interface IProps {
 }
 
 const Container = styled.section`
-  max-width: 500px;
   padding: 20px;
   background-color: ${WHITE};
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.23);

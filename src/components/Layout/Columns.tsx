@@ -1,4 +1,5 @@
 import * as React from 'react';
+import styled from 'styled-components';
 import ContentContainer, {
   BackgroundColors,
   Children,
@@ -11,7 +12,13 @@ interface IProps {
   bottomPadding?: boolean;
   backgroundColor: BackgroundColors;
   centerHorizontally?: boolean;
+  maxWidth?: boolean | number;
 }
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
 /**
  * Render the content in columns
@@ -23,6 +30,7 @@ const Columns = ({
   bottomPadding,
   backgroundColor,
   centerHorizontally,
+  maxWidth,
 }: IProps) => (
   <ContentContainer
     backgroundColor={backgroundColor}
@@ -30,8 +38,13 @@ const Columns = ({
     verticalOverlap={!!verticalOverlap}
     topPadding={!!topPadding}
     centerHorizontally={!!centerHorizontally}
+    maxWidth={maxWidth}
   >
-    {children}
+    {typeof children === 'function' ? (
+      props => <Content>{children(props)}</Content>
+    ) : (
+      <Content>{children}</Content>
+    )}
   </ContentContainer>
 );
 

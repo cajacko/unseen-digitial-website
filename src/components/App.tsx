@@ -15,10 +15,11 @@ import TitleText from './Spotlights/TitleText';
 // Just add global resets here, do not target any components, as
 // their style should be scoped
 const GlobalStyle = createGlobalStyle`
-  html, body {
+  html, body, #root {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -40,18 +41,28 @@ const App = () => (
         />
       )}
     </Rows>
-    <Rows verticalOverlap backgroundColor={GREY_LIGHT} centerHorizontally>
+    <Rows
+      verticalOverlap
+      backgroundColor={GREY_LIGHT}
+      centerHorizontally
+      maxWidth={500}
+    >
       <TextSpotlight text={content.description} />
     </Rows>
-    <Columns topPadding backgroundColor={WHITE}>
+    <Columns topPadding backgroundColor={WHITE} maxWidth>
       <TextList title={content.servicesTitle} items={content.services} />
       <TitleText title={content.uvpTitle} text={content.uvpDescription} />
     </Columns>
-    <Rows backgroundColor={GREY_LIGHT}>
-      <TitleText title={content.peopleTitle} text={content.peopleDescription} />
+    <Rows backgroundColor={GREY_LIGHT} maxWidth>
+      <TitleText
+        title={content.peopleTitle}
+        text={content.peopleDescription}
+        centerText
+        centerTitle
+      />
       <ImageTextLink items={content.people} />
     </Rows>
-    <Rows backgroundColor={WHITE}>
+    <Rows backgroundColor={WHITE} maxWidth>
       <TitleLink
         title={content.contactTitle}
         linkText={content.contactButton}
