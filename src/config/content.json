@@ -1,0 +1,40 @@
+{
+  "title": "Unseen Digital",
+  "tagLine": "Tech Startup as a Service",
+  "contactUrl": "mailto:infor@unseen.dev",
+  "contactButton": "Contact",
+  "description": "Id exercitation magna consectetur laboris laborum. Anim duis Lorem magna labore labore culpa minim ut voluptate deserunt. Ea ullamco veniam excepteur non ad ea excepteur ex eu ipsum deserunt nulla occaecat commodo. Minim Lorem culpa commodo laborum laborum eiusmod culpa proident velit deserunt consectetur. Incididunt incididunt reprehenderit quis officia qui excepteur aute enim et consequat.",
+  "servicesTitle": "Services",
+  "services": [
+    "Elit magna irure sunt ullamco quis et incididunt elit Lorem aliqua in cillum.",
+    "In ullamco et quis in dolore mollit non occaecat velit ad aute commodo non laboris.",
+    "Eiusmod reprehenderit do dolor sunt mollit officia occaecat consequat cupidatat amet.",
+    "Ut reprehenderit laborum elit deserunt ea pariatur sit ad eiusmod.",
+    "Fugiat mollit voluptate minim pariatur."
+  ],
+  "uvpTitle": "Why Us",
+  "uvpDescription": "Occaecat incididunt amet aliquip in eu laboris officia ad veniam do. Eiusmod officia ex veniam excepteur sit culpa pariatur duis nisi minim minim. Aute ullamco exercitation minim mollit incididunt amet anim ullamco. Cupidatat velit est esse magna.",
+  "peopleTitle": "People",
+  "peopleDescription": "Fugiat nostrud culpa adipisicing quis nulla consequat non id commodo nostrud cupidatat. Dolore duis Lorem incididunt esse aute eiusmod veniam cillum ut ullamco elit eu. Cillum ad velit et est elit voluptate commodo. Est amet reprehenderit cillum anim qui nisi dolore eu non culpa. Sint incididunt deserunt aliqua laborum excepteur quis laborum amet magna reprehenderit irure.",
+  "people": [
+    {
+      "key": "charlie",
+      "imageUrl": "https://media.licdn.com/dms/image/C5603AQHrA0Nm3IOzkw/profile-displayphoto-shrink_200_200/0?e=1557360000&v=beta&t=05GkHwbFG6uQwu9PBMWzQx5_wjHL4eoeX87R0ISkRJo",
+      "imageAlt": "Charlie Jackson head shot",
+      "title": "Charlie Jackson",
+      "text": "JavaScript Developer",
+      "linkUrl": "https://www.linkedin.com/in/charliejackson9/",
+      "linkText": "More"
+    },
+    {
+      "key": "rob",
+      "imageUrl": "https://media.licdn.com/dms/image/C5603AQF15DBgNYGjIg/profile-displayphoto-shrink_800_800/0?e=1557360000&v=beta&t=70b0yaJd6mhYsVlSGKekl6ePM4ZFI0pnVmyEXaVGG5U",
+      "imageAlt": "Rob Wollner head shot",
+      "title": "Rob Wollner",
+      "text": "Developer man with a plan",
+      "linkUrl": "https://www.linkedin.com/in/robert-wollner-88878167/",
+      "linkText": "More"
+    }
+  ],
+  "contactTitle": "Contact Us"
+}

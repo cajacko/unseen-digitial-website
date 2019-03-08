@@ -1,0 +1,21 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "no-console": false,
+    "member-ordering": false,
+    "curly": false,
+    "jsx-boolean-value": false,
+    "redux-container-types": true
+  },
+  "rulesDirectory": "./tslint",
+  "linterOptions": {
+    "exclude": [
+      "*.json",
+      "**/*.json",
+      "**/*.d.ts",
+      "**/node_modules/**/*",
+      "build/**/*",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+}
