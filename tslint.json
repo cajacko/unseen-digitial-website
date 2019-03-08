@@ -7,7 +7,7 @@
     "jsx-boolean-value": false,
     "redux-container-types": true
   },
-  "rulesDirectory": "tslint",
+  "rulesDirectory": "./tslint",
   "linterOptions": {
     "exclude": [
       "*.json",
