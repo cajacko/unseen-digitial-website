@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import linkStyles, { Themes, ThemeStyleKeys } from '../config/linkStyles';
+import linkStyles, { Themes, ThemeStyleKeys } from '../../config/linkStyles';
 import Text from './Text';
 
 interface IProps {

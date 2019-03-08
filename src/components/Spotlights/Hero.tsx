@@ -2,8 +2,8 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { WHITE } from '../../config/colors';
 import { BackgroundColors } from '../Layout/ContentContainer';
-import Link from '../Link';
-import Text from '../Text';
+import Link from '../UI/Link';
+import Text from '../UI/Text';
 
 interface IProps {
   title: string;

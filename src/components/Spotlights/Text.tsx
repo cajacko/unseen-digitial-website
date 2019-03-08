@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { WHITE } from '../../config/colors';
-import Text from '../Text';
+import Text from '../UI/Text';
 
 interface IProps {
   text: string;

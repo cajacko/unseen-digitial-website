@@ -84,6 +84,7 @@ const Content = styled.div<IDivProps>`
 const MaxWidth = styled.div<{ maxWidth?: IProps['maxWidth'] }>`
   display: flex;
   flex-direction: column;
+  width: 100%;
   ${applyMaxWidth}
 `;
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { BLACK, Colors } from '../config/colors';
-import textStyles, { Types, TypeStyleKeys } from '../config/textStyles';
+import { BLACK, Colors } from '../../config/colors';
+import textStyles, { Types, TypeStyleKeys } from '../../config/textStyles';
 
 interface ISpanProps {
   color?: Colors;

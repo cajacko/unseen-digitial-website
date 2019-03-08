@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Image from '../Image';
-import Link from '../Link';
-import Text from '../Text';
+import Image from '../UI/Image';
+import Link from '../UI/Link';
+import Text from '../UI/Text';
 
 interface IProps {
   items: Array<{

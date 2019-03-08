@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import Text from '../Text';
+import Text from '../UI/Text';
 import TitleContent from './TitleContent';
 
 interface IProps {
