@@ -19,7 +19,7 @@
   "people": [
     {
       "key": "charlie",
-      "imageUrl": "/assets/charlie.png",
+      "imageUrl": "https://media.licdn.com/dms/image/C5603AQHrA0Nm3IOzkw/profile-displayphoto-shrink_200_200/0?e=1557360000&v=beta&t=05GkHwbFG6uQwu9PBMWzQx5_wjHL4eoeX87R0ISkRJo",
       "imageAlt": "Charlie Jackson head shot",
       "title": "Charlie Jackson",
       "text": "JavaScript Developer",
@@ -28,7 +28,7 @@
     },
     {
       "key": "rob",
-      "imageUrl": "/assets/rob.png",
+      "imageUrl": "https://media.licdn.com/dms/image/C5603AQF15DBgNYGjIg/profile-displayphoto-shrink_800_800/0?e=1557360000&v=beta&t=70b0yaJd6mhYsVlSGKekl6ePM4ZFI0pnVmyEXaVGG5U",
       "imageAlt": "Rob Wollner head shot",
       "title": "Rob Wollner",
       "text": "Developer man with a plan",
