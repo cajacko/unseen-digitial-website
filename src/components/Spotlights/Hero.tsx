@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { BLACK, WHITE } from '../../config/colors';
+import { WHITE } from '../../config/colors';
+import { BackgroundColors } from '../Layout/ContentContainer';
 import Link from '../Link';
 import Text from '../Text';
 
@@ -9,13 +10,19 @@ interface IProps {
   subTitle: string;
   linkText: string;
   linkUrl: string;
+  backgroundColor: BackgroundColors;
+  height: string;
 }
 
-const Container = styled.section`
+interface IContainerProps {
+  backgroundColor: IProps['backgroundColor'];
+  height: string;
+}
+
+const Container = styled.section<IContainerProps>`
   display: flex;
-  height: calc(100vh - 50px);
-  width: 100vw;
-  background-color: ${BLACK};
+  height: ${({ height }) => height};
+  background-color: ${({ backgroundColor }) => backgroundColor};
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -33,9 +40,14 @@ const SubTitleSpacing = styled.div`
  * Render a giant piece of hero content
  */
 const Hero = ({
-  title, subTitle, linkText, linkUrl,
+  title,
+  subTitle,
+  linkText,
+  linkUrl,
+  backgroundColor,
+  height,
 }: IProps) => (
-  <Container>
+  <Container backgroundColor={backgroundColor} height={height}>
     <Text type="h1" text={title} color={WHITE} />
     <SubTitleSpacing>
       <Text type="h2" text={subTitle} color={WHITE} />

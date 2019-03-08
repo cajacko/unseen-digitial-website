@@ -25,6 +25,9 @@ const Span = styled.span<ISpanProps>`
   color: ${({ color }) => color || BLACK};
   font-size: ${applyTypeStyle('fontSize')}px;
   font-weight: ${applyTypeStyle('fontWeight')};
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 `;
 
 /**

@@ -8,7 +8,7 @@
     "test": "tslint -c tslint.json 'src/**/*.ts*' && eslint src --ext .jsx,.js,.ts,.tsx",
     "eject": "react-scripts eject",
     "serve": "firebase serve",
-    "deploy": "firebase deploy"
+    "deploy": "yarn test && yarn build && firebase deploy"
   },
   "dependencies": {
     "lodash": "^4.17.11",
@@ -43,10 +43,5 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
