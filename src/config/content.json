@@ -1,28 +1,29 @@
 {
   "title": "Unseen Digital",
   "tagLine": "Tech Startup as a Service",
-  "contactUrl": "mailto:infor@unseen.dev",
+  "contactUrl": "mailto:info@unseen.dev",
   "contactButton": "Contact",
-  "description": "Id exercitation magna consectetur laboris laborum. Anim duis Lorem magna labore labore culpa minim ut voluptate deserunt. Ea ullamco veniam excepteur non ad ea excepteur ex eu ipsum deserunt nulla occaecat commodo. Minim Lorem culpa commodo laborum laborum eiusmod culpa proident velit deserunt consectetur. Incididunt incididunt reprehenderit quis officia qui excepteur aute enim et consequat.",
+  "description": "Applying the mentality and energy of a modern tech startup to technical consultancy. Delivering truly lean rapidly iterable solutions to technical problems. Flexibility and adaptability where traditional consultancies are bloated and monolithic. The as a service mentality stretches from beginning to end. Define your problem with us, and we’ll do everything to leave you with a working, understood and manageable solution to whatever problem needs modernising or idea that requires creation.",
   "servicesTitle": "Services",
   "services": [
-    "Elit magna irure sunt ullamco quis et incididunt elit Lorem aliqua in cillum.",
-    "In ullamco et quis in dolore mollit non occaecat velit ad aute commodo non laboris.",
-    "Eiusmod reprehenderit do dolor sunt mollit officia occaecat consequat cupidatat amet.",
-    "Ut reprehenderit laborum elit deserunt ea pariatur sit ad eiusmod.",
-    "Fugiat mollit voluptate minim pariatur."
+    "High level analysis of the technical aspects or opportunities of your business.",
+    "Problem definition, brief creation and scope.",
+    "Project creation and team assembly.",
+    "Ongoing management and feedback.",
+    "Project delivery, documentation and handover."
   ],
-  "uvpTitle": "Why Us",
-  "uvpDescription": "Occaecat incididunt amet aliquip in eu laboris officia ad veniam do. Eiusmod officia ex veniam excepteur sit culpa pariatur duis nisi minim minim. Aute ullamco exercitation minim mollit incididunt amet anim ullamco. Cupidatat velit est esse magna.",
+  "uvpTitle": "Why Us?",
+  "uvpDescription1": "Tech consultancy can be inordinately expensive. In a world with ever increasing technical demands, and too few people capable of delivering it, hiring one or two staff can be the difference between a comfortable profit, and loss. History is plagued with stories of horrendous cost over-runs of technical projects, yet billion dollar tech start-ups can launch with a few thousand pounds. Why?",
+  "uvpDescription2": "It's all down to the methodology. A start up will get the minimum needed to function done as quickly as possible, and iterate quickly. This removes costly scope changes near project completion, and allows problems to be identified as soon as they appear. We're in the buisiness of applying these modern work flows and management styles to everything we build. Aiming to demonstrate wire-frames within days, and release candidates in weeks. Only using the most modern of automated workflow control, changes can be seen live within minutes or second. Truly lean fast paced development saving money and stopping errors.",
   "peopleTitle": "People",
-  "peopleDescription": "Fugiat nostrud culpa adipisicing quis nulla consequat non id commodo nostrud cupidatat. Dolore duis Lorem incididunt esse aute eiusmod veniam cillum ut ullamco elit eu. Cillum ad velit et est elit voluptate commodo. Est amet reprehenderit cillum anim qui nisi dolore eu non culpa. Sint incididunt deserunt aliqua laborum excepteur quis laborum amet magna reprehenderit irure.",
+  "peopleDescription": "Our senior team contains experience building, growing and adapting for multiple start-ups. Having worked with remote teams of developers, delivering projects of both enterprise and small systems scale, we're able to leverage our experience to build ad-hoc and adaptable teams to deliver whatever projects your business needs to transform.",
   "people": [
     {
       "key": "charlie",
       "imageUrl": "https://media.licdn.com/dms/image/C5603AQHrA0Nm3IOzkw/profile-displayphoto-shrink_200_200/0?e=1557360000&v=beta&t=05GkHwbFG6uQwu9PBMWzQx5_wjHL4eoeX87R0ISkRJo",
       "imageAlt": "Charlie Jackson head shot",
       "title": "Charlie Jackson",
-      "text": "JavaScript Developer",
+      "text": "JavaScript Developer and project lead",
       "linkUrl": "https://www.linkedin.com/in/charliejackson9/",
       "linkText": "More"
     },
@@ -31,7 +32,7 @@
       "imageUrl": "https://media.licdn.com/dms/image/C5603AQF15DBgNYGjIg/profile-displayphoto-shrink_800_800/0?e=1557360000&v=beta&t=70b0yaJd6mhYsVlSGKekl6ePM4ZFI0pnVmyEXaVGG5U",
       "imageAlt": "Rob Wollner head shot",
       "title": "Rob Wollner",
-      "text": "Developer man with a plan",
+      "text": "CTO, Engineer and Developer",
       "linkUrl": "https://www.linkedin.com/in/robert-wollner-88878167/",
       "linkText": "More"
     }

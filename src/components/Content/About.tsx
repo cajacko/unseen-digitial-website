@@ -1,18 +1,18 @@
 import React from 'react';
 import { WHITE } from '../../config/colors';
 import content from '../../config/content.json';
-import Columns from '../Layout/Columns';
+import Rows from '../Layout/Rows';
 import TextList from '../Spotlights/TextList';
-import TitleText from '../Spotlights/TitleText';
+import TitleText2 from '../Spotlights/TitleText2';
 
 /**
  * Render the about component
  */
 const About = () => (
-  <Columns topPadding backgroundColor={WHITE} maxWidth>
+  <Rows topPadding backgroundColor={WHITE} maxWidth>
     <TextList title={content.servicesTitle} items={content.services} />
-    <TitleText title={content.uvpTitle} text={content.uvpDescription} />
-  </Columns>
+    <TitleText2 title={content.uvpTitle} text1={content.uvpDescription1} text2={content.uvpDescription2} />
+  </Rows>
 );
 
 export default About;

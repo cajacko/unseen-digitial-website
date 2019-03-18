@@ -4,7 +4,8 @@ import TitleContent from './TitleContent';
 
 interface IProps {
   title: string;
-  text: string;
+  text1: string;
+  text2: string;
   centerTitle?: boolean;
   centerText?: boolean;
   maxContentWidth?: number;
@@ -13,9 +14,10 @@ interface IProps {
 /**
  * Render a title and text
  */
-const TitleText = ({
+const TitleText2 = ({
   title,
-  text,
+  text1,
+  text2,
   centerTitle,
   centerText,
   maxContentWidth,
@@ -25,9 +27,9 @@ const TitleText = ({
     centerTitle={centerTitle}
     maxContentWidth={maxContentWidth}
   >
-    <Text text={text} type="body1" center={centerText} />
+    <p><Text text={text1} type="body1" center={centerText} /></p>
+    <p><Text text={text2} type="body1" center={centerText} /></p>
   </TitleContent>
 );
 
-
-export default TitleText;
+export default TitleText2;
