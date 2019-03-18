@@ -11,7 +11,11 @@ import TitleText2 from '../Spotlights/TitleText2';
 const About = () => (
   <Rows topPadding backgroundColor={WHITE} maxWidth>
     <TextList title={content.servicesTitle} items={content.services} />
-    <TitleText2 title={content.uvpTitle} text1={content.uvpDescription1} text2={content.uvpDescription2} />
+    <TitleText2
+      title={content.uvpTitle}
+      text1={content.uvpDescription1}
+      text2={content.uvpDescription2}
+    />
   </Rows>
 );
 
